@@ -46,7 +46,7 @@ class AuthHelper:
     def confirm_login_success(driver):
         # Проверяем, что мы на главной странице
         WebDriverWait(driver, 10).until(EC.url_to_be(
-            Links.main_page_link))
+            Links.link_main_page))
 
     # Проверка успешности редиректа после регистрации
     @staticmethod
