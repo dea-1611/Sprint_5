@@ -30,7 +30,7 @@ class TestBrowseInConstructor:
         self.check_active_tab(driver, Locators.locator_tab_active_bun, 'Булки')
 
     def test_browse_to_sauces(self, driver):
-        driver.get(Links.)
+        driver.get(Links.link_main_page)
         self.wait_and_click_constructor(driver, Locators.locator_constructor_tab_sauce)
         self.check_active_tab(driver, Locators.locator_tab_active_sauce, 'Соусы')
 
