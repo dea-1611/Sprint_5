@@ -60,7 +60,7 @@ class AuthHelper:
         try:
             WebDriverWait(driver, 3).until(
                 EC.visibility_of_element_located
-                (TestLocators.ERROR_MESSAGE_LOCATOR))
+                (Locators.locator_message_error))
             return True
         except TimeoutException:
             return False
