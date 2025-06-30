@@ -38,3 +38,4 @@ class Locators:
 
     locator_message_wrong_password = (By.XPATH, "//p[contains(text(), 'Некорректный пароль')]")         # Сообщение о некорректном пароле
     locator_forgot_password = (By.XPATH, "//a[text()='Восстановить пароль']")                           # ссылка Восстановить пароль
+    locator_message_error = (By.CSS_SELECTOR, ".input__error.text_type_main-default")
