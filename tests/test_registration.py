@@ -6,9 +6,8 @@ from locators import Locators
 
 
 class TestRegistration:
-    def __init__(self):
-        self.wait_time = 5
-        self.login_url = Links.link_login_page
+    self.wait_time = 5
+    self.login_url = Links.link_login_page
 
     def wait_for_element(self, driver, locator):
         return WebDriverWait(driver, self.wait_time).until(
