@@ -54,3 +54,13 @@ class AuthHelper:
         # Проверяем, что мы на странице логина
         WebDriverWait(driver, 10).until(EC.url_to_be(
             Links.link_login_page))
+
+    @staticmethod
+    def is_user_already_exists(driver):
+        try:
+            WebDriverWait(driver, 3).until(
+                EC.visibility_of_element_located
+                (TestLocators.ERROR_MESSAGE_LOCATOR))
+            return True
+        except TimeoutException:
+            return False
