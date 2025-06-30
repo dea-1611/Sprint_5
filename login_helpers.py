@@ -53,4 +53,4 @@ class AuthHelper:
     def confirm_registration_success(driver):
         # Проверяем, что мы на странице логина
         WebDriverWait(driver, 10).until(EC.url_to_be(
-            Links.login_page_link))
+            Links.link_login_page))
