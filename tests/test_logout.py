@@ -6,7 +6,7 @@ from locators import Locators
 class TestLogout:
     def __init__(self):
         self.wait_time = 5
-        self.login_url = Links.login_page_link
+        self.login_url = Links.link_login_page
 
     def wait_and_click_logout(self, driver, locator):
         WebDriverWait(driver, self.wait_time).until(
