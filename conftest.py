@@ -1,7 +1,7 @@
 import pytest
 from selenium import webdriver
 
-from auth_helper import AuthHelper
+from login_helpers import AuthHelper
 from links import Links
 from generator import Generator
 
