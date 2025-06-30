@@ -6,9 +6,8 @@ from links import Links
 from locators import Locators
 
 class TestLogin:
-    def __init__(self):
-        self.wait_time = 10
-        self.main_page_url = Links.link_main_page
+    self.wait_time = 10
+    self.main_page_url = Links.link_main_page
 
     def wait_and_click_login(self, driver, locator):
         WebDriverWait(driver, self.wait_time).until(
