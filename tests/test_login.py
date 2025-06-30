@@ -40,7 +40,7 @@ class TestLogin:
         self.perform_login(driver, registered_user)
 
     def test_login_registration_link(self, driver, registered_user):
-        driver.get(Links.registration_page_link)
+        driver.get(Links.link_registration_page)
         self.wait_and_click_login(driver, Locators.locator_login_link)
         self.perform_login(driver, registered_user)
 
