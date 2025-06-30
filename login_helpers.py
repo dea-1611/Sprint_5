@@ -13,11 +13,11 @@ class AuthHelper:
     def login(driver, email, password):
         # Заполняем форму входа
         WebDriverWait(driver, 5).until(EC.presence_of_element_located(
-            Locators.EMAIL_LOCATOR))
-        driver.find_element(*Locators.EMAIL_LOCATOR).send_keys(email)
-        driver.find_element(*Locators.PASSWORD_LOCATOR).send_keys(password)
+            Locators.locator_email))
+        driver.find_element(*Locators.locator_email).send_keys(email)
+        driver.find_element(*Locators.locator_password).send_keys(password)
         # Нажимаем кнопку "Войти"
-        driver.find_element(*Locators.LOGIN_BUTTON_LOCATOR).click()
+        driver.find_element(*Locators.locator_login_button).click()
 
     # Метод для регистрации пользователя
     @staticmethod
