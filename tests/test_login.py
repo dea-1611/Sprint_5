@@ -1,7 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from auth_helper import AuthHelper
+from login_helpers import AuthHelper
 from links import Links
 from locators import Locators
 
