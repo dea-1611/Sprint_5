@@ -32,7 +32,7 @@ def test_password():
 # фикстура для предварительной регистрации
 def registered_user(driver, test_email, test_password):
     # Переход на страницу регистрации
-    driver.get(Links.registration_page_link)
+    driver.get(Links.link_registration_page)
     # Регистрация пользователя
     AuthHelper.registration(driver, test_email, test_password)
     # Подтверждаем успешную регистрацию
