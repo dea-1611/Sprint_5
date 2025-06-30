@@ -6,9 +6,8 @@ from locators import Locators
 
 
 class TestBrowseInConstructor:
-    def __init__(self):
-        self.wait_time = 5
-        self.active_class = 'tab_tab_type_current__2BEPc'
+    self.wait_time = 5
+    self.active_class = 'tab_tab_type_current__2BEPc'
 
     def wait_and_click_constructor(self, driver, locator):
         WebDriverWait(driver, self.wait_time).until(
